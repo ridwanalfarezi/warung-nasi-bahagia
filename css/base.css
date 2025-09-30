@@ -1,0 +1,135 @@
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  line-height: 1.6;
+  color: #333;
+  background-color: #fefefe;
+}
+:root {
+  
+  --primary-orange: #ff6b35;
+  --primary-green: #4caf50;
+  --primary-brown: #8b4513;
+  --warm-yellow: #ffd700;
+
+  
+  --light-orange: #ffe4dc;
+  --light-green: #e8f5e8;
+  --cream: #fff8e7;
+  --warm-gray: #f5f5f0;
+
+  
+  --text-dark: #2c3e50;
+  --text-medium: #555;
+  --text-light: #777;
+  --text-white: #fff;
+
+  
+  --section-padding: 80px 0;
+  --container-padding: 20px;
+  --border-radius: 12px;
+
+  
+  --card-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  --hover-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+
+  
+  --smooth-transition: all 0.3s ease;
+  --quick-transition: all 0.2s ease;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--text-dark);
+  margin-bottom: 15px;
+  font-weight: 600;
+}
+
+h1 {
+  font-size: 2.5rem;
+}
+h2 {
+  font-size: 2rem;
+}
+h3 {
+  font-size: 1.5rem;
+}
+h4 {
+  font-size: 1.25rem;
+}
+
+p {
+  color: var(--text-medium);
+  margin-bottom: 15px;
+}
+
+a {
+  text-decoration: none;
+  transition: var(--smooth-transition);
+}
+.section-title {
+  text-align: center;
+  font-size: 2.5rem;
+  margin-bottom: 15px;
+  color: var(--text-dark);
+  position: relative;
+}
+
+.section-title::after {
+  content: "";
+  display: block;
+  width: 80px;
+  height: 4px;
+  background: var(--primary-orange);
+  margin: 20px auto;
+  border-radius: 2px;
+}
+
+.section-subtitle {
+  text-align: center;
+  font-size: 1.1rem;
+  color: var(--text-light);
+  margin-bottom: 50px;
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+@media print {
+  .header,
+  .hero,
+  .cta,
+  .footer {
+    display: none;
+  }
+
+  body {
+    font-size: 12pt;
+    line-height: 1.5;
+  }
+
+  .page-hero {
+    margin-top: 0;
+    padding: 20px 0;
+  }
+}

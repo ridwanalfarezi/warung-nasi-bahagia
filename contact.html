@@ -1,0 +1,422 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewpor    </section>
+
+    <section class="order-o    </section>
+
+    <section class="contact-form">ns">ontent="width=device-width, initial-scale=1.0" />
+    <title>Kontak - Warung Nasi Bahagia</title>
+    <link rel="stylesheet" href="css/main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Dancing+Script:wght@400;600;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <header class="header">
+      <nav class="nav">
+        <div class="logo">
+          <h1 class="logo-text">🍚 Warung Nasi Bahagia</h1>
+          <p class="motto">Rasa Nusantara di Setiap Mangkok</p>
+        </div>
+        <ul class="nav-menu">
+          <li><a href="index.html" class="nav-link">Beranda</a></li>
+          <li><a href="menu.html" class="nav-link">Menu</a></li>
+          <li><a href="about.html" class="nav-link">Tentang Kami</a></li>
+          <li><a href="contact.html" class="nav-link active">Kontak</a></li>
+        </ul>
+        <div class="hamburger">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </nav>
+    </header>
+
+    <section class="page-hero">
+      <div class="container">
+        <h1>Pesan Takeaway & Delivery</h1>
+        <p>
+          Siap melayani pesanan takeaway dan delivery! Coba menu ricebowl
+          populer kami: Nasi Katsu, Nasi Telur, dan Nasi Nugget Sosis. Hubungi
+          kami untuk memesan atau pesan melalui website.
+        </p>
+      </div>
+    </section>
+
+    <section class="contact-info">
+      <div class="container">
+        <div class="contact-grid">
+          <div class="contact-card">
+            <div class="contact-icon">📍</div>
+            <h3>Lokasi Ambil Pesanan</h3>
+            <p>
+              Jl. Raya Kemang No. 123<br />
+              Jakarta Selatan, 12560<br />
+              Indonesia<br />
+              <strong>Takeaway Only - Tidak Melayani Dine-In</strong>
+            </p>
+            <a href="#map" class="contact-link">Lihat di Peta</a>
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">📞</div>
+            <h3>Telepon Kami</h3>
+            <p>
+              Utama: (021) 7890-1234<br />
+              Pemesanan: (021) 7890-1235<br />
+              Katering: (021) 7890-1236
+            </p>
+            <a href="tel:+622178901234" class="contact-link"
+              >Telepon Sekarang</a
+            >
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">✉️</div>
+            <h3>Email Kami</h3>
+            <p>
+              Umum: halo@nasibahagia.com<br />
+              Pesanan: pesan@nasibahagia.com<br />
+              Katering: katering@nasibahagia.com
+            </p>
+            <a href="mailto:halo@nasibahagia.com" class="contact-link"
+              >Kirim Email</a
+            >
+          </div>
+
+          <div class="contact-card">
+            <div class="contact-icon">🕒</div>
+            <h3>Jam Operasional Takeaway</h3>
+            <p>
+              Senin - Jumat: 10:00 - 21:00 WIB<br />
+              Sabtu - Minggu: 11:00 - 22:00 WIB<br />
+              Hari Libur: Cek media sosial kami<br />
+              <strong>Khusus Takeaway & Delivery</strong>
+            </p>
+            <a href="#social" class="contact-link">Ikuti Kami</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Order Online -->
+    <section class="order-online">
+      <div class="container">
+        <h2 class="section-title">Cara Pesan Takeaway</h2>
+        <div class="order-options">
+          <div class="order-card">
+            <div class="order-icon">🚗</div>
+            <h3>Ambil di Tempat</h3>
+            <p>
+              Pesan online dan ambil di lokasi kami. Siap dalam 15-20 menit!
+            </p>
+            <a href="tel:+62217890-1234" class="btn btn-primary"
+              >Pesan Ambil Sendiri</a
+            >
+          </div>
+
+          <div class="order-card">
+            <div class="order-icon">🚚</div>
+            <h3>Delivery</h3>
+            <p>
+              Dapatkan nasi mangkok favorit Anda diantar ke rumah. Gratis ongkir
+              untuk pembelian di atas Rp 100.000!
+            </p>
+            <a href="https://wa.me/628123456789" class="btn btn-secondary"
+              >Pesan Delivery</a
+            >
+          </div>
+
+          <div class="order-card">
+            <div class="order-icon">🎉</div>
+            <h3>Katering</h3>
+            <p>
+              Merencanakan acara? Biarkan kami melayani dengan hidangan nasi
+              mangkok lezat kami!
+            </p>
+            <a href="mailto:katering@nasibahagia.com" class="btn btn-outline"
+              >Minta Penawaran</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact Form -->
+    <section class="contact-form-section">
+      <div class="container">
+        <div class="form-container">
+          <div class="form-header">
+            <h2>Kirim Pesan kepada Kami</h2>
+            <p>
+              Ada pertanyaan, saran, atau hanya ingin menyapa? Kami senang
+              mendengar dari Anda!
+            </p>
+          </div>
+
+          <form class="contact-form" onsubmit="handleFormSubmit(event)">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">Nama Depan *</label>
+                <input type="text" id="firstName" name="firstName" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Nama Belakang *</label>
+                <input type="text" id="lastName" name="lastName" required />
+              </div>
+            </div>
+
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Alamat Email *</label>
+                <input type="email" id="email" name="email" required />
+              </div>
+              <div class="form-group">
+                <label for="phone">Nomor Telepon</label>
+                <input type="tel" id="phone" name="phone" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subjek *</label>
+              <select id="subject" name="subject" required>
+                <option value="">Pilih subjek</option>
+                <option value="general">Pertanyaan Umum</option>
+                <option value="order">Masalah Pesanan</option>
+                <option value="catering">Permintaan Katering</option>
+                <option value="feedback">Masukan</option>
+                <option value="complaint">Keluhan</option>
+                <option value="compliment">Pujian</option>
+              </select>
+            </div>
+
+            <div class="form-group">
+              <label for="message">Pesan *</label>
+              <textarea
+                id="message"
+                name="message"
+                rows="5"
+                placeholder="Beritahu kami bagaimana kami bisa membantu Anda..."
+                required
+              ></textarea>
+            </div>
+
+            <div class="form-group checkbox-group">
+              <label class="checkbox-label">
+                <input type="checkbox" id="newsletter" name="newsletter" />
+                <span class="checkmark"></span>
+                Berlangganan newsletter kami untuk penawaran khusus dan update
+                terbaru
+              </label>
+            </div>
+
+            <button type="submit" class="btn btn-primary btn-large">
+              Kirim Pesan
+            </button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+    <section class="map-section" id="map">
+      <div class="container">
+        <h2 class="section-title">Temukan Kami</h2>
+        <div class="map-container">
+          <div class="map-info">
+            <h3>Lokasi Warung Nasi Bahagia</h3>
+            <p>📍 Jl. Raya Kemang No. 123, Jakarta Selatan, 12560</p>
+            <div class="map-features">
+              <div class="map-feature">🅿️ Parkir Gratis Tersedia</div>
+              <div class="map-feature">🚇 Stasiun TransJakarta: 2 blok</div>
+              <div class="map-feature">♿ Akses Kursi Roda</div>
+            </div>
+          </div>
+          <div class="map-embed">
+            <iframe
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3965.0763431266834!2d106.81638301428508!3d-6.2656948956344495!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f1d3ad8d4d27%3A0x4a8e6d9a8b9c7e5a!2sKemang%2C%20Jakarta%20Selatan!5e0!3m2!1sen!2sid!4v1632456789012!5m2!1sen!2sid"
+              width="100%"
+              height="400"
+              style="border: 0; border-radius: 10px"
+              allowfullscreen=""
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+            >
+            </iframe>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="social-section" id="social">
+      <div class="container">
+        <h2 class="section-title">Ikuti Perjalanan Kami</h2>
+        <div class="social-grid">
+          <div class="social-card">
+            <div class="social-icon">📘</div>
+            <h3>Facebook</h3>
+            <p>
+              Bergabunglah dengan komunitas kami dan dapatkan update menu harian
+              spesial, acara, dan konten di balik layar.
+            </p>
+            <a
+              href="https://facebook.com/warungnasibahagiajakarta"
+              target="_blank"
+              class="btn btn-outline"
+              >Ikuti Kami</a
+            >
+          </div>
+
+          <div class="social-card">
+            <div class="social-icon">📸</div>
+            <h3>Instagram</h3>
+            <p>
+              Lihat nasi mangkok cantik kami dan dapatkan inspirasi dari foto
+              customer. Tag kami #WarungNasiBahagia!
+            </p>
+            <a
+              href="https://instagram.com/warungnasibahagiajakarta"
+              target="_blank"
+              class="btn btn-outline"
+              >Ikuti Kami</a
+            >
+          </div>
+
+          <div class="social-card">
+            <div class="social-icon">🐦</div>
+            <h3>Twitter</h3>
+            <p>
+              Dapatkan update real-time, ikut percakapan, dan dengar tentang
+              promosi kilat kami!
+            </p>
+            <a
+              href="https://twitter.com/warungnasijkt"
+              target="_blank"
+              class="btn btn-outline"
+              >Ikuti Kami</a
+            >
+          </div>
+
+          <div class="social-card">
+            <div class="social-icon">⭐</div>
+            <h3>Ulasan</h3>
+            <p>
+              Bagikan pengalaman Warung Nasi Bahagia Anda di Google, Zomato, dan
+              TripAdvisor. Masukan Anda sangat berharga!
+            </p>
+            <a
+              href="https://g.page/r/CQM8xjPTJ5OXEAE/review"
+              target="_blank"
+              class="btn btn-outline"
+              >Beri Ulasan</a
+            >
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="faq-section">
+      <div class="container">
+        <h2 class="section-title">Pertanyaan yang Sering Diajukan</h2>
+        <div class="faq-grid">
+          <div class="faq-item">
+            <h3>Apakah ada layanan delivery?</h3>
+            <p>
+              Ya! Kami melayani delivery dalam radius 10 km. Gratis ongkir untuk
+              pesanan di atas Rp 100.000. Delivery biasanya memakan waktu 30-45
+              menit.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Bisakah saya menyesuaikan menu mangkok saya?</h3>
+            <p>
+              Tentu saja! Kami mendorong kustomisasi. Anda bisa mengganti bahan,
+              menambah extra, atau memodifikasi tingkat pedas sesuai selera.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Apakah ada pilihan vegan?</h3>
+            <p>
+              Ya, kami punya beberapa pilihan vegan dan vegetarian yang jelas
+              ditandai di menu. Kami juga menggunakan area persiapan terpisah
+              untuk menghindari kontaminasi silang.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Apakah melayani katering acara?</h3>
+            <p>
+              Ya! Kami menyediakan katering untuk acara segala ukuran. Silakan
+              hubungi kami di katering@nasibahagia.com atau telepon (021)
+              7890-1236 untuk penawaran.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Apakah ada tempat parkir?</h3>
+            <p>
+              Ya, kami punya area parkir gratis dengan 20 tempat. Parkir di
+              jalan juga tersedia di Jl. Raya Kemang.
+            </p>
+          </div>
+
+          <div class="faq-item">
+            <h3>Apakah perlu reservasi untuk takeaway?</h3>
+            <p>
+              Kami adalah layanan takeaway only. Anda dapat memesan melalui
+              website atau telepon, dan pesanan akan disiapkan sesuai waktu yang
+              Anda tentukan. Tidak diperlukan reservasi khusus.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="footer">
+      <div class="container">
+        <div class="footer-content">
+          <div class="footer-section">
+            <h3>🍚 Warung Nasi Bahagia</h3>
+            <p>Rasa Nusantara di Setiap Mangkok</p>
+            <p>
+              Menyajikan kelezatan nasi mangkok terbaik dengan cita rasa
+              autentik Indonesia.
+            </p>
+          </div>
+          <div class="footer-section">
+            <h4>Menu Cepat</h4>
+            <ul>
+              <li><a href="index.html">Beranda</a></li>
+              <li><a href="menu.html">Menu</a></li>
+              <li><a href="about.html">Tentang Kami</a></li>
+              <li><a href="contact.html">Kontak</a></li>
+            </ul>
+          </div>
+          <div class="footer-section">
+            <h4>Info Kontak</h4>
+            <p>📍 Jl. Raya Kemang No. 123, Jakarta Selatan</p>
+            <p>📞 (021) 7890-1234</p>
+            <p>✉️ halo@nasibahagia.com</p>
+          </div>
+          <div class="footer-section">
+            <h4>Jam Buka</h4>
+            <p>Sen-Jum: 10:00 - 21:00 WIB</p>
+            <p>Sab-Min: 11:00 - 22:00 WIB</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>
+            &copy; 2024 Warung Nasi Bahagia. Semua hak dilindungi. Dibuat dengan
+            ❤️ dan 🍚
+          </p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="scripts/hamburger.js"></script>
+  </body>
+</html>
